@@ -1,15 +1,13 @@
-import { Outlet } from 'react-router-dom'
-import Sidebar from '../sidebar/Sidebar'
 import './Layout.css'
+import Home from '../home/Home'
 
 const Layout = () => {
   return (
     <div className="layout">
-      <Sidebar />
       <div className="page">
         <span className="tags top-tags">&lt;body&gt;</span>
 
-        <Outlet />
+        <Home/>
         
         <span className="tags bottom-tags">
           &lt;/body&gt;

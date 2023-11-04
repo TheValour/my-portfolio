@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+
 import Animate from '../animatedLetters/Animate';
-import LogoTitle from '../../assets/images/logo-s.png';
+import rLogo from '../../assets/images/rLogo.png';
 import './Home.css';
-import Logo from '../logo/Logo';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
 
-  const nameArray = ['l', 'o', 'b', 'o', 'd', 'a', 'n'];
+  const nameArray = ['a', 'h', 'u', 'l'];
   const jobArray = ['W', 'e', 'b', ' ', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.'];
 
   useEffect(() => {
@@ -22,39 +21,36 @@ const Home = () => {
   }, []);
 
   return (
-    <>
-      <div className="container home-page">
-        <div className="text-zone">
-          <h1>
-            <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
-            <br />
-            <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
-            <img
-              src={LogoTitle}
-              alt="JavaScript Developer Name, Web Developer Name"
-            />
-            <Animate
-              letterClass={letterClass}
-              strArray={nameArray}
-              idx={15}
-            />
-            <br />
-            <Animate
-              letterClass={letterClass}
-              strArray={jobArray}
-              idx={22}
-            />
-          </h1>
-          <h2>Front End Developer / JavaScript Expert / Youtuber</h2>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
-        </div>
-        <Logo/>
+    <div id='Home' className="container home-page">
+      <div className="text-zone">
+        <h1>
+          <span className={letterClass}>H</span>
+          <span className={`${letterClass} _12`}>i,</span>
+          <br />
+          <span className={`${letterClass} _13`}>I</span>
+          <span className={`${letterClass} _14`}>'m</span>
+          <img
+            src={rLogo}
+            alt="JavaScript Developer Name, Web Developer Name"
+          />
+          <Animate
+            letterClass={letterClass}
+            strArray={nameArray}
+            idx={15}
+          />
+          <br />
+          <Animate
+            letterClass={letterClass}
+            strArray={jobArray}
+            idx={22}
+          />
+        </h1>
+        <h2>Front End Developer / JavaScript Expert / MERN stack Developer</h2>
+        <a href="#Contact" className="flat-button">
+          CONTACT ME
+        </a>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,10 +1,9 @@
-.home-page .text-zone {
+.home-page > .text-zone {
     position: absolute;
-    left: 10%;
+    left: 5%;
     top: 50%;
     transform: translateY(-50%);
     width: 40%;
-    max-height: 90%;
 }
 .home-page h1 {
     color: #fff;
@@ -35,7 +34,7 @@
     animation: fadeIn 1s 1.7s backwards;
 }
 .home-page h1 img {
-    width: 32px;
+    width: 35px;
     margin-left: 20px;
     opacity: 0;
     height: auto;

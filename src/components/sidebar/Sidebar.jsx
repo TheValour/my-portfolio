@@ -1,10 +1,7 @@
 import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
 
 import './Sidebar.css'
-
 import LogoS from '../../assets/images/rLogo.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faYoutube, faSkype } from '@fortawesome/free-brands-svg-icons'
@@ -15,44 +12,40 @@ const Sidebar = () => {
 
   return (
     <div className="nav-bar">
-      <Link 
+      <a 
         className="logo"
-        to="/"
+        href="Home"
         onClick={() => setShowNav(false)}>
         <img src={LogoS} alt="Logo" />
         <div className="sub-logo" >Rahul</div>
-      </Link>
+      </a>
       <nav className={showNav ? 'mobile-show' : ''}>
-        <NavLink 
+        <a 
           exact="true"
-          activeclassname="active"
-          to="/"
+          href="#Home"
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
-        </NavLink>
-        <NavLink 
-          activeclassname="active"
+        </a>
+        <a 
           className="about-link"
-          to="/about"
+          href="#About"
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-        </NavLink>
-        <NavLink
-          activeclassname="active"
+        </a>
+        <a
           className="portfolio-link"
-          to="/portfolio"
+          href="/portfolio"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
-        </NavLink>
-        <NavLink
-          activeclassname="active"
+        </a>
+        <a
           className="contact-link"
-          to="/contact"
+          href="/contact"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-        </NavLink>
+        </a>
         <FontAwesomeIcon 
           onClick={() => setShowNav(false)}
           icon={faClose}
@@ -63,7 +56,7 @@ const Sidebar = () => {
       <ul>
         <li>
           <a
-            href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
+            href="https://www.linkedin.com/in/rahul01singh07"
             target="_blank"
             rel="noreferrer"
           >
@@ -76,7 +69,7 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="https://github.com/bobangajicsm"
+            href="https://github.com/TheValour"
             target="_blank"
             rel="noreferrer"
           >
