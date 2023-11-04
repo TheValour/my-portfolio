@@ -2,7 +2,7 @@
     background: #181818;
     width: 8vw;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 3;
     min-height: 500px;
@@ -20,8 +20,10 @@
     height: auto;
 }
 
-.nav-bar .logo img.sub-logo {
-    width: 50px;
+.nav-bar .logo .sub-logo {
+    width: 100%;
+    text-align: center;
+    color: white;
 }
 
 .nav-bar nav {

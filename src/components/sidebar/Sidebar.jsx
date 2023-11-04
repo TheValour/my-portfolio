@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 
 import './Sidebar.css'
 
-import LogoS from '../../assets/images/logo-s.png'
+import LogoS from '../../assets/images/rLogo.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -20,7 +20,7 @@ const Sidebar = () => {
         to="/"
         onClick={() => setShowNav(false)}>
         <img src={LogoS} alt="Logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+        <div className="sub-logo" >Rahul</div>
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink 

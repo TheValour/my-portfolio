@@ -21,3 +21,6 @@ input,
 textarea {
   font-family: 'Helveti Neue';
 }
+a {
+  text-decoration: none;
+}
