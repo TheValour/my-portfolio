@@ -85,7 +85,7 @@
 }
 
 .nav-bar nav a.portfolio-link:after {
-    content: 'PORTFOLIO';
+    content: 'PROJECT';
 }
 
 .nav-bar nav a.active svg {

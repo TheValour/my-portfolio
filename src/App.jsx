@@ -1,5 +1,5 @@
 import './App.css';
-import { About, Home, Sidebar } from './components';
+import { About, Home, Project, Sidebar } from './components';
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <div className='display-section'>
         <Home/>
         <About/>
+        <Project/>
       </div>
     </div>
   );

@@ -1,0 +1,53 @@
+/* Project.css */
+.project-container {
+    background-color: grey;
+    margin-bottom: 10vh;
+    padding-top: 10vh;
+}
+.projects {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr); /* 4 rows with equal height */
+    grid-template-columns: repeat(7, 1fr); /* 4 columns with equal width */
+    grid-gap: 3vw; /* Adjust the gap as needed */
+    max-width: 80vw; /* Set a max width for the grid, adjust as needed */
+    max-height: 200vh;
+    margin: 0 auto;
+}
+
+.projects div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Add a background color for the grid items */
+    padding: 20px; /* Add padding to space out the items */
+}
+
+.projects img {
+    max-width: 100%;
+    height: auto;
+}
+
+#box1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#box2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 8;
+}
+#box3 {
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+#box4{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 8;
+}

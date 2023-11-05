@@ -34,7 +34,7 @@ const Sidebar = () => {
         </a>
         <a
           className="portfolio-link"
-          href="/portfolio"
+          href="#Project"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
