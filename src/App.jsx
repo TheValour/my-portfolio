@@ -1,5 +1,5 @@
 import './App.css';
-import { About, Home, Project, Sidebar } from './components';
+import { About, Contact, Home, Project, Sidebar } from './components';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
         <Home/>
         <About/>
         <Project/>
+        <Contact/>
       </div>
     </div>
   );

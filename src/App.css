@@ -36,3 +36,9 @@ a {
   height: 100vh;
   margin-left: 8vw;
 }
+
+.flex {
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+}

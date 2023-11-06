@@ -50,6 +50,7 @@ const Home = () => {
           CONTACT ME
         </a>
       </div>
+      <div className='border'></div>
     </div>
   );
 };

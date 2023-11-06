@@ -41,7 +41,7 @@ const Sidebar = () => {
         </a>
         <a
           className="contact-link"
-          href="/contact"
+          href="#Contact"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
