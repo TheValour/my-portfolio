@@ -95,3 +95,17 @@
     transform: rotateX(90deg);
   }
 }
+
+/* responsive --------- */
+@media screen and (max-width: 750px) {
+  .about-page {
+    flex-direction: column;
+    height: auto;
+  }
+  .about-page > .text-zone {
+    width: 80%;
+  }
+  .about-page > .cube-section {
+    width: 80%;
+  }
+}

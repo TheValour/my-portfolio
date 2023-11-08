@@ -127,11 +127,11 @@
         height: auto;
         min-height: auto;
     }
-
+    
     .nav-bar ul, .nav-bar nav {
         display: none;
     }
-
+    
     .nav-bar nav {
         width: 100%;
         top: 0;
@@ -139,10 +139,10 @@
         background: #181818;
         height: 100%;
         margin: 0;
-        /* z-index: 2; */
+        z-index: 2;
         position: fixed;
     }
-
+    
     .nav-bar nav.mobile-show {
         display: block;
     }
@@ -159,11 +159,11 @@
         width: auto;
         margin-left: 10px;
     }
-
+    
     .nav-bar nav a svg {
         opacity: 1 !important;
     }
-
+    
     .hamburger-icon, .close-icon {
         position: absolute;
         top: 15px;

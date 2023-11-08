@@ -1,9 +1,5 @@
-.home-page > .text-zone {
-    position: absolute;
-    left: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40%;
+.home-page {
+    justify-content: space-around;
 }
 .home-page h1 {
     color: #fff;
@@ -12,6 +8,43 @@
     font-family: 'Coolvetica';
     font-weight: 400;
 }
+.hero-img-section {
+    width: 30%;
+}
+.hero-img-section > img:first-child {
+    width: 20rem;
+    overflow: hidden;
+    position: absolute;
+    animation: rotation 6s infinite linear;
+    /* animation-direction: alternate; */
+    cursor: pointer;
+}
+.hero-img-section > img:first-child:after {
+    content: 'Hello';
+}
+
+@keyframes rotation {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    25% {
+      -webkit-transform: rotate(5deg);
+    }
+    50% {
+      -webkit-transform: rotate(0deg);
+    }
+    75% {
+      -webkit-transform: rotate(-5deg);
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+    }
+}
+.hero-img-section > .circle {
+    width: 50rem;
+    overflow: hidden;
+    position: absolute;
+}
 .home-page h1::before {
     content: '<h1>';
     font-family: 'La Belle Aurore';
@@ -19,7 +52,7 @@
     margin-top: -40px;
     color: yellow;
     font-size: 18px;
-    left: 15px;
+    left: 6vw;
     opacity: 0.6;
 }
 .home-page h1::after {
@@ -46,7 +79,7 @@ h2 {
     color: #8d8d8d;
     margin-top: 20px;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 14px;
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
@@ -84,4 +117,11 @@ h2 {
     height: 2px;
     width: 100%;
     margin: 1vh;
+}
+
+/* responsive --------- */
+@media screen and (max-width: 750px) {
+    .home-page {
+        flex-direction: column;
+    }
 }

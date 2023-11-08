@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 
 import Animate from '../animatedLetters/Animate';
 import rLogo from '../../assets/images/rLogo.png';
+import heroLogo from '../../assets/images/hero.png';
+import Circle from '../../assets/images/Ellipse.png';
 import './Home.css';
 
 const Home = () => {
@@ -21,7 +23,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div id='Home' className="container home-page">
+    <div id='Home' className="container home-page flex">
       <div className="text-zone">
         <h1>
           <span className={letterClass}>H</span>
@@ -50,7 +52,10 @@ const Home = () => {
           CONTACT ME
         </a>
       </div>
-      <div className='border'></div>
+      <div className='hero-img-section flex'>
+        <img src={heroLogo} alt="" />
+        <img src={Circle} alt="" className='circle'/>
+      </div>
     </div>
   );
 };
