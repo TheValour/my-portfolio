@@ -4,7 +4,7 @@ import './Sidebar.css'
 import LogoS from '../../assets/images/rLogo.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub, faYoutube, faSkype } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faGithub, faYoutube} from '@fortawesome/free-brands-svg-icons'
 import {faHome, faUser, faEnvelope, faSuitcase, faBars, faClose } from '@fortawesome/free-solid-svg-icons'
 
 const Sidebar = () => {
@@ -88,15 +88,6 @@ const Sidebar = () => {
           >
             <FontAwesomeIcon
               icon={faYoutube}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="skype:live:bobangajicsm" rel="noreferrer" target="_blank">
-            <FontAwesomeIcon
-              icon={faSkype}
               color="#4d4d4e"
               className="anchor-icon"
             />

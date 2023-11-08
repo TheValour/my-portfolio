@@ -2,6 +2,14 @@
 .project-container {
     background-color: grey;
     padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-heading {
+    font-size: 5vh;
+    width: 80vw;
+    padding: 2vh;
 }
 .projects {
     display: grid;
@@ -14,16 +22,24 @@
 }
 
 .projects div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f0f0f0; /* Add a background color for the grid items */
-    padding: 20px; /* Add padding to space out the items */
+    background-color: black; 
+    color: white;
 }
 
+.projects .boxes {
+    flex-direction: column;
+}
+.projects img:hover {
+    opacity: 0.4;
+}
 .projects img {
     max-width: 100%;
     height: auto;
+}
+.project-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 #box1 {
