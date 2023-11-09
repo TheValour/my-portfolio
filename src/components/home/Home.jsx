@@ -5,6 +5,7 @@ import rLogo from '../../assets/images/rLogo.png';
 import heroLogo from '../../assets/images/hero.png';
 import Circle from '../../assets/images/Ellipse.png';
 import './Home.css';
+import BgAnimation from '../animatedLetters/BgAnimation';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -56,6 +57,7 @@ const Home = () => {
         <img src={heroLogo} alt="" />
         <img src={Circle} alt="" className='circle'/>
       </div>
+      <BgAnimation/>
     </div>
   );
 };
