@@ -1,6 +1,5 @@
-/* Project.css */
 .project-container {
-    background-color: grey;
+    background-color: #767373;
     padding-top: 10vh;
     display: flex;
     flex-direction: column;
@@ -41,6 +40,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    font-size: 2.5vh;
 }
 
 #box1 {
