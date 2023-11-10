@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import './Contact.css'
-import Animate from '../animatedLetters/Animate'
+
+import Animate from '../animation/Animate'
+import Astronaut from '../animation/Astronaut';
 
 import { faLinkedin, faGithub, faYoutube} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -61,6 +63,10 @@ export default function Contact2() {
             </div>
         </div>
         <h4>Contact Form</h4>
+
+        {/* astronaut ------------------ */}
+        <Astronaut/>
+
         <form className='form flex' onSubmit={sendEmail} ref={form}>
             <input type="text" placeholder='Name :' id='name'/>
             <input type="email" placeholder='Email :' id='email'/>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Project.css'
-import Animate from '../animatedLetters/Animate';
+import Animate from '../animation/Animate';
 
 import {pro1, pro2, pro3, pro4} from '../../assets/img'
 

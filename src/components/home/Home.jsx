@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 
-import Animate from '../animatedLetters/Animate';
+import Animate from '../animation/Animate';
 import rLogo from '../../assets/images/rLogo.png';
 import heroLogo from '../../assets/images/hero.png';
 import Circle from '../../assets/images/Ellipse.png';
 import './Home.css';
-import BgAnimation from '../animatedLetters/BgAnimation';
+import BgAnimation from '../animation/BgAnimation';
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');

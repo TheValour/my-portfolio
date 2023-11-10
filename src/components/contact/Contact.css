@@ -1,4 +1,5 @@
 .contact-sections {
+    position: relative;
     flex-direction: column;
     width: 90vw;
 }
@@ -13,6 +14,7 @@
 .contact-sections > .form {
     width: 25%;
     flex-direction: column;
+    z-index: 999;
 }
 .contact-sections > .form >input {
     padding: 2vh;

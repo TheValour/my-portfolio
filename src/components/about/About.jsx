@@ -6,7 +6,7 @@ import {
   faHtml5, faJsSquare, faReact,
 } from '@fortawesome/free-brands-svg-icons'
 
-import Animate from '../animatedLetters/Animate'
+import Animate from '../animation/Animate'
 import './About.css'
 import '../layout/Layout.css'
 import Astro from '../../assets/images/about.png'
