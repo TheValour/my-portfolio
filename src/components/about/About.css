@@ -109,3 +109,15 @@
     width: 80%;
   }
 }
+
+#About img {
+  position: relative;
+  width: 10vh;
+  margin-left: 4vh;
+  transition: transform 3.5s ease-in-out; /* Set the transition property */
+}
+
+#About img:hover {
+  cursor:grabbing;
+  transform: scale(3.1) rotate(-30deg); /* Scale the container on hover */
+}

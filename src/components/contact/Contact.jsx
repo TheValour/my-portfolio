@@ -1,7 +1,7 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import './Contact.css'
-
+import Animate from '../animatedLetters/Animate'
 
 import { faLinkedin, faGithub, faYoutube} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,8 +9,21 @@ import { faPhone, faLocationPin, faEnvelope } from '@fortawesome/free-solid-svg-
 
 export default function Contact2() {
   const form = useRef();
-  const sendEmail = (e) => {
+  const [letterClass, setLetterClass] = useState('text-animate')
+
+    useEffect(() => {
+    const timeoutId = setTimeout(() => {
+        setLetterClass('text-animate-hover');
+    }, 3000);
+
+    return () => {
+        clearTimeout(timeoutId); // Cleanup: Clear the timeout when the component unmounts
+    };
+    }, []);
+  
+    const sendEmail = (e) => {
     e.preventDefault();
+
 
     emailjs.sendForm('service_7h3wv8d', 'template_v4q4hlv', form.current, 'n-PDtk-55n-hiOJQ7')
       .then((result) => {
@@ -23,7 +36,13 @@ export default function Contact2() {
 
   return (
     <div className='flex contact-sections'>
-        <h3>Get in Touch!</h3>
+        <h1>
+          <Animate
+            letterClass={letterClass}
+            strArray={['G', 'e', 't', '', 'I', 'n ', '', 'T','o','u','c','h']}
+            idx={15}
+          />
+        </h1>
         <div className="contact-options flex">
             <div className="contact-boxes flex">
                 <FontAwesomeIcon icon={faPhone} />

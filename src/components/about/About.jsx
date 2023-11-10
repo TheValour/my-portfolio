@@ -9,6 +9,7 @@ import {
 import Animate from '../animatedLetters/Animate'
 import './About.css'
 import '../layout/Layout.css'
+import Astro from '../../assets/images/about.png'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -32,6 +33,7 @@ const About = () => {
             strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
             idx={15}
           />
+          <img src={Astro} alt="" />
         </h1>
         <p>
           I'm a very ambitious front-end developer looking for a role in an
@@ -44,8 +46,7 @@ const About = () => {
         </p>
         <p>
           If I need to define myself in one sentence that would be a family
-          person, father of a beautiful daughter, a sports fanatic,
-          photography enthusiast, and tech-obsessed!!!
+          person, living in a beautiful country, a sports  enthusiast, and tech-obsessed!!!
         </p>
       </div>
       <div className='cube-section flex'>

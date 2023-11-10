@@ -16,7 +16,6 @@
     overflow: hidden;
     position: absolute;
     animation: rotation 6s infinite linear;
-    /* animation-direction: alternate; */
     cursor: pointer;
 }
 .hero-img-section > img:first-child:after {
@@ -111,7 +110,7 @@ h2 {
     background-size: 15px 2px;
     background-position: -50% center;
     content: "";
-    top: 95%;
+    top: 98%;
     position: absolute;
     left: 0px;
     height: 2px;
@@ -124,4 +123,179 @@ h2 {
     .home-page {
         flex-direction: column;
     }
+}
+
+/* adding sauare effect------ */
+.squares-container > .square {
+    z-index: -1;
+    position: relative;
+}
+/* size------------- */
+.squares-container .small {
+    width: 8px;
+    height: 8px;
+}
+.squares-container .medium {
+    width: 10px;
+    height: 10px;
+}
+.squares-container .large {
+    width: 11px;
+    height: 11px;
+}
+/* color-------------- */
+.squares-container .light-blue {
+    background-color: skyblue;
+}
+.squares-container .blue {
+    background-color: rgb(229, 189, 114);
+}
+.squares-container .dark-blue {
+    background-color: rgb(34, 113, 144);
+}
+.squares-container .red {
+    background-color: red;
+}
+
+/* positon top-------- */
+.squares-container #box1 {
+    top: 50px;
+    right: 5px;
+}
+.squares-container #box2 {
+    top: 40px;
+    left: 5px;
+}
+.squares-container #box3 {
+    top: 22px;
+    left: 17px;
+}
+.squares-container #box4 {
+    top: 23px;
+    left: 45px;
+}
+/* position :bottom---------- */
+.squares-container #box5 {
+    top: 207px;
+    left: 50px;
+}
+.squares-container #box6 {
+    top: 210px;
+    left: 10px;
+}
+.squares-container #box7 {
+    top: 220px;
+    left: -40px;
+}
+.squares-container #box8 {
+    top: 203px;
+    left: 21px;
+}
+
+/* right--------- */
+.squares-container #box9 {
+    left:115px;
+    top: 80px;
+}
+.squares-container #box10 {
+    left:115px;
+    top:82px;
+}
+.squares-container #box11 {
+    left:115px;
+    top: 85px;
+
+}
+.squares-container #box12 {
+    left:100px;
+    top: 65px;
+}
+/* left--------- */
+.squares-container #box13 {
+    right:100px;
+    bottom: -60px;
+}
+.squares-container #box14 {
+    right:101px;
+    bottom: -63px;
+}
+.squares-container #box15 {
+    right:110px;
+    bottom: -40px;
+}
+.squares-container #box16 {
+    right:115px;
+    bottom: -55px;
+}
+/* top-left------- */
+.squares-container #box17 {
+    right:60px;
+    bottom: 50px;
+}
+.squares-container #box18 {
+    right:50px;
+    bottom: 50px;
+}
+.squares-container #box19 {
+    right:80px;
+    bottom: 70px;
+}
+.squares-container #box20 {
+    right:72px;
+    bottom: 90px;
+}
+/* bottom right----------------- */
+.squares-container #box21 {
+    left:185px;
+    bottom: 15px;
+}
+.squares-container #box22 {
+    left:140px;
+    bottom: 190px;
+}
+.squares-container #box23 {
+    left:175px;
+    bottom: 15px;
+}
+.squares-container #box24 {
+    left:107px;
+    bottom: 22px;
+}
+
+/* bottem-left--------- */
+
+.squares-container #box25 {
+    left:120px;
+    bottom: 22px;
+}
+.squares-container #box26 {
+    left:60px;
+    bottom: 12px;
+}
+.squares-container #box27 {
+    left:70px;
+    bottom: 12px;
+}
+.squares-container #box28 {
+    left:-10px;
+    top: 35px;
+}
+
+
+/* top-rigth------------- */
+.squares-container #box29 {
+    left:90px;
+    bottom: 170px;
+}
+.squares-container #box30 {
+    left:100px;
+    bottom: 192px;
+}
+.squares-container #box31 {
+    left:140px;
+    bottom: 22px;
+}
+.squares-container #box32 {
+    right: 140px;
+    bottom: 240px;
 }
