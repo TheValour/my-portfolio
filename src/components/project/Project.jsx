@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Project.css'
 import Animate from '../animation/Animate';
 
-import {pro1, pro2, pro3, pro4} from '../../assets/img'
+import {pro1, pro2, pro3, pro4, pro6, pro7} from '../../assets/img'
 
 export default function Project() {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -28,25 +28,25 @@ export default function Project() {
         />
       </div>
         <div className="projects">
-          <div className="boxes flex" id="box1">
+          <div className="boxes flex"  id="box1">
             <a href="https://github.com/TheValour" target="_blank" rel="noreferrer noopener">
-              <img src={pro1} alt="" />
-            </a>
-            <div className="project-content">
-              <span>Weather App</span><span>HTML/ CSS/ JS</span>
-            </div>
-          </div>
-          <div className="boxes flex"  id="box2">
-            <a href="https://github.com/TheValour" target="_blank" rel="noreferrer noopener">
-              <img src={pro2} alt="" />
+              <img src={pro6} alt="" />
             </a>
             <div className="project-content">
               <span>Expence Maneger</span><span>React/ Redux</span>
             </div>
           </div>
-          <div className="boxes flex"  id="box3">
+          <div className="boxes flex" id="box2">
             <a href="https://github.com/TheValour" target="_blank" rel="noreferrer noopener">
               <img src={pro3} alt="" />
+            </a>
+            <div className="project-content">
+              <span>Weather App</span><span>HTML/ CSS/ JS</span>
+            </div>
+          </div>
+          <div className="boxes flex"  id="box3">
+            <a href="https://github.com/TheValour" target="_blank" rel="noreferrer noopener">
+              <img src={pro7} alt="" />
             </a>
             <div className="project-content">
               <span>Chat App</span><span>React/ Firebase</span>
@@ -57,7 +57,7 @@ export default function Project() {
               <img src={pro4} alt="" />
             </a>
             <div className="project-content">
-              <span>Chat App</span><span>React/ Firebase</span>
+              <span>Zomi Clone</span><span>React</span>
             </div>
           </div>
         </div>

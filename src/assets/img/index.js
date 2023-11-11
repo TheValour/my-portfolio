@@ -4,7 +4,8 @@ import pro3 from './pro3.png'
 import pro4 from './pro4.png'
 import pro5 from './pro5.png'
 import pro6 from './pro6.jpg'
+import pro7 from './pro7.png'
 
 export {
-    pro1, pro2, pro3, pro4, pro5, pro6
+    pro1, pro2, pro3, pro4, pro5, pro6, pro7
 }
