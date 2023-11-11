@@ -4,8 +4,8 @@ import './Sidebar.css'
 import LogoS from '../../assets/images/rLogo.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub, faYoutube} from '@fortawesome/free-brands-svg-icons'
-import {faHome, faUser, faEnvelope, faSuitcase, faBars, faClose } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
+import {faHome, faUser, faEnvelope, faSuitcase, faBars, faClose, faCode } from '@fortawesome/free-solid-svg-icons'
 
 const Sidebar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -82,12 +82,12 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
+            href="https://leetcode.com/RahulSingh08/"
             rel="noreferrer"
             target="_blank"
           >
             <FontAwesomeIcon
-              icon={faYoutube}
+              icon={faCode}
               color="#4d4d4e"
               className="anchor-icon"
             />

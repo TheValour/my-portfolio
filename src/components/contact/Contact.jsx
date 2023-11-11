@@ -37,7 +37,7 @@ export default function Contact2() {
   };
 
   return (
-    <div className='flex contact-sections'>
+    <div id="Contact" className='flex contact-sections'>
         <h1>
           <Animate
             letterClass={letterClass}
@@ -91,7 +91,7 @@ export default function Contact2() {
                 </a>
             </li>
             <li>
-                <a  href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
+                <a  href="https://leetcode.com/RahulSingh08/"
                     rel="noreferrer"
                     target="_blank"
                 >

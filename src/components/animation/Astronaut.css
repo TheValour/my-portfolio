@@ -62,7 +62,7 @@
     top: 90%;
     left: -10%;
     pointer-events: none;
-    animation: rocket-movement 200s linear infinite;
+    animation: rocket-movement 300s linear infinite;
 }
 
 
@@ -86,4 +86,56 @@
     .central-body {
         padding-top: 25%;
     }
+}
+
+/* UFO------------------------ */
+@-moz-keyframes move-ufo {
+    100% {
+        -moz-transform: translate(60px, 160px);
+    }
+}
+
+@-webkit-keyframes move-ufo {
+    100% {
+        -webkit-transform: translate(60px, 160px);
+    }
+}
+
+@keyframes move-ufo {
+    100% {
+        -webkit-transform: translate(60px, 160px);
+        transform: translate(60px, 160px);
+    }
+}
+@-moz-keyframes rotate-ufo {
+    100% {
+        -moz-transform: rotate(-720deg);
+    }
+}
+
+@-webkit-keyframes rotate-ufo {
+    100% {
+        -webkit-transform: rotate(-720deg);
+    }
+}
+
+@keyframes rotate-ufo {
+    100% {
+        -webkit-transform: rotate(-720deg);
+        transform: rotate(-720deg);
+    }
+}
+#ufo {
+    z-index: 110 !important;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    will-change: transform;
+    animation: move-ufo 200s infinite linear both alternate;
+}
+.box_ufo {
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    animation: rotate-ufo 200s infinite linear both alternate;
 }

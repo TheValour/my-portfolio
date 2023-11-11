@@ -34,7 +34,7 @@
 
 .contact-sections > .form > button {
     padding: 2vh;
-    margin: 3vh;
+    margin: 1vh;
     background: #876f43;
     border: none;
     border-radius: 3px;
@@ -56,6 +56,9 @@
     font-family: monospace;
     padding: 3vh;
     background-color: #040524;
+}
+.contact-options > .contact-boxes:hover {
+    color: #ebad3a;
 }
 
 .contact-boxes:nth-child(-n+2) {
