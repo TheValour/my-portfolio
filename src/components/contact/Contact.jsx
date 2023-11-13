@@ -5,9 +5,9 @@ import './Contact.css'
 import Animate from '../animation/Animate'
 import Astronaut from '../animation/Astronaut';
 
-import { faLinkedin, faGithub, faYoutube} from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faLocationPin, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faPhone, faLocationPin, faEnvelope, faCode, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 export default function Contact2() {
   const form = useRef();
@@ -45,6 +45,7 @@ export default function Contact2() {
             idx={15}
           />
         </h1>
+        <h4>So that we can talk more about..</h4>
         <div className="contact-options flex">
             <div className="contact-boxes flex">
                 <FontAwesomeIcon icon={faPhone} />
@@ -62,8 +63,6 @@ export default function Contact2() {
                 <span>helloworld@gmail.com</span>
             </div>
         </div>
-        <h4>Contact Form</h4>
-
         {/* astronaut ------------------ */}
         <Astronaut/>
 
@@ -71,7 +70,7 @@ export default function Contact2() {
             <input type="text" placeholder='Name :' id='name'/>
             <input type="email" placeholder='Email :' id='email'/>
             <input type="text" placeholder='Message :' id='message'/>
-            <button>Send Message</button>
+            <button>Let's talk! <FontAwesomeIcon icon={faArrowRight} /></button>
         </form>
         <ul className='flex contact-links'>
             <li>
@@ -86,7 +85,7 @@ export default function Contact2() {
                 <a  href="https://github.com/TheValour"
                     target="_blank"
                     rel="noreferrer"
-                >
+                    >
                     <FontAwesomeIcon icon={faGithub} color="#4d4d4e" className="anchor-icon" />
                 </a>
             </li>
@@ -94,11 +93,12 @@ export default function Contact2() {
                 <a  href="https://leetcode.com/RahulSingh08/"
                     rel="noreferrer"
                     target="_blank"
-                >
-                    <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" className="anchor-icon" />
+                    >
+                    <FontAwesomeIcon icon={faCode} color="#4d4d4e" className="anchor-icon" />
                 </a>
             </li>
         </ul>
+        <h4>Made with ❣️ by rahul singh</h4>
     </div>
   )
 }

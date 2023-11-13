@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+
 .contact-sections {
     position: relative;
     flex-direction: column;
     width: 90vw;
+    color: #d0caca;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .contact-sections > h1 {
@@ -9,7 +13,8 @@
 }
 
 .contact-sections > h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
 }
 .contact-sections > .form {
     width: 25%;
@@ -17,6 +22,7 @@
     z-index: 999;
 }
 .contact-sections > .form >input {
+    box-sizing: border-box;
     padding: 2vh;
     width: 100%;
     margin-bottom: 3vh;
@@ -38,7 +44,10 @@
     background: #876f43;
     border: none;
     border-radius: 3px;
-    
+    width: 100%;
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: rgb(219, 212, 212);
 }
 .contact-sections > .form > button:hover {
     background: #ebad3a;
@@ -47,6 +56,7 @@
     color: #876f43;
     width: 60%;
     justify-content: space-evenly;
+    margin-bottom: 6vh;
 }
 
 .contact-options > .contact-boxes {
@@ -55,6 +65,7 @@
     font-size: 1.2vw;
     font-family: monospace;
     padding: 3vh;
+    cursor:cell;
     background-color: #040524;
 }
 .contact-options > .contact-boxes:hover {
@@ -66,8 +77,8 @@
 }
 
 .contact-links {
+    margin-top: 5vh;
     width: 50%;
-    margin: 4vh;
 }
 
 .contact-links > li {

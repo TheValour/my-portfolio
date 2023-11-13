@@ -1,3 +1,5 @@
+/* @import url(faEye from '@fortawesome/free-solid-svg-icons'); */
+
 .project-container {
     background-color: #767373;
     padding-top: 10vh;
@@ -24,13 +26,25 @@
 .projects div {
     background-color: black; 
     color: white;
+    position: relative;
 }
 
 .projects .boxes {
     flex-direction: column;
 }
 .projects img:hover {
-    opacity: 0.4;
+    opacity: 0.1;
+}
+.projects> div a:hover::after {
+    content: '</>';
+    font-family: 'La Belle Aurore';
+    position: absolute;
+    color: yellow;
+    font-size: 10vh;
+    left: 30vh;
+    top: 25vh;
+    opacity: 0.6;
+    z-index: 1;
 }
 .projects img {
     max-width: 100%;

@@ -117,6 +117,18 @@ h2 {
     width: 100%;
     margin: 1vh;
 }
+#border2 {
+    top: 99%;
+}
+.imgBorder {
+    width: 100%;
+    top: 96%;
+    position: absolute;
+    width: 100%; /* Adjust the width as needed */
+    height: 90%; /* Adjust the height as needed */
+    background-image: url('../../assets//images/border2.png'); 
+    background-repeat: repeat-x;
+}
 
 /* responsive --------- */
 @media screen and (max-width: 750px) {

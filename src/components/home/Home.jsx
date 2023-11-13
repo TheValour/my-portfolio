@@ -100,7 +100,9 @@ const Home = () => {
         </div>
       </div>
       <BgAnimation/>
-      <div className="border"> </div>
+      {/* <div className="border"> </div>
+      <div className="border" id='border2'> </div> */}
+      <div className='imgBorder'></div>
     </div>
   );
 };

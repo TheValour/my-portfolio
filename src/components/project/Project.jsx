@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Project.css'
 import Animate from '../animation/Animate';
 
-import {pro1, pro2, pro3, pro4, pro6, pro7} from '../../assets/img'
+import {pro3, pro4, pro6, pro7} from '../../assets/img'
 
 export default function Project() {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -24,7 +24,7 @@ export default function Project() {
         <Animate
           letterClass={letterClass}
           strArray={projectArray}
-          idx={15}
+          idx={10}
         />
       </div>
         <div className="projects">
