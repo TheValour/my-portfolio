@@ -86,3 +86,20 @@
     font-size: 3rem;
     list-style: none;
 }
+
+@media screen and (max-width: 750px) {
+    .contact-sections > .form {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .contact-sections > .form {
+        width: 70%;
+    }
+    .contact-options {
+        flex-direction: column;
+    }
+    .contact-options .contact-boxes {
+        border: none;
+    }
+}
